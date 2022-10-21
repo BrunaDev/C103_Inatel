@@ -22,6 +22,7 @@ int main()
 	list<int> lista; //"ponteiro" para a lista
 	int N; //var aux
 	int x;//variavel a ser procurada
+	bool res;//variavel para receber a resposta
 	
 	cin>>N;
 	while(N!=0)
@@ -31,9 +32,9 @@ int main()
 	
 	cin>>x;
 
-	encontrar(lista, x);
+	res = encontrar(lista, x);
 	
-	if(encontrar)
+	if(res == true)
 		cout << "Encontrado" << endl;
 	else
 		cout << "Nao encontrado" << endl;
